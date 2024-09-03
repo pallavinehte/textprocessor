@@ -1,0 +1,32 @@
+Daily Standup
+Daily standup is a meeting held everyday normally in the morning. During daily standup every team member has to talk about 3 areas.
+What he did last working day?
+What is he planning to do today?
+Are there any impedements?
+With the standup everybody including scrum master gets a very clear view about sprint progress and status. 
+If there are any impedements comes up during the standup, scrum master needs to address those impedements.
++
+Sprint Review
+Sprint review is done at the end of every sprint. Here the team members demonstrates the work done during the sprint to the stakeholders and related teams. In this meeting stakeholders can give there feedback on the progress and Product Owner can decide on further action points if  reuired. Sprint review gives a crystal clear view to the stakeholders how there product is progressing and gives an opportunity to them to change any further actions if required.
+
+Sprint Retrospective
+Sprint retrospective is the last meeting held at the end of the sprint where team members talks about
+What went well in last sprint?
+What does not went good in the last sprint?
+Team members identify any good practices that needs to be continued.
+Any scope of improvement that needs to be adopted.
+Purpose of this meeting is to increase the proúdctivity by concentrating on good things team is doing and discontinuing the wrong things.
+
+Sprint Artifacts
+Artifact that helps stakeholders to get information about the sprint progress are called are sprint artifacts. 
+Standard sprint srtifacts includes
+Product backlog: Product Backlog contains complete product requirements, mostly inthe form of features and User Stories.
+Sprint Backlog: Sprint backlog contains the User Stories picked up to complete in the current sprint.
+Sprint burndown. Progress of the sprint is measured by the sprint burndown chart. Sprint burndown always shows the work remaining in the sprint in the form of Story points. Ideally the remaining work should be zero at the end of the sprint.
+Product Increment: Ideally after every sprint a product with additional capability is available. This is known as product incremet. So after eevry sprint a new product increment is available and is demonstrated during the sprint review.
+
+Definition of done: Dod is an agreement defined by the team that defines a definition of done. This might include the conditions that needs to be met by the user story before it is set to done. Few conditions for example might be
+Acceptence criteria is met
+Test cases are written and executed.
+Documentation is written/modified.
+Similarly whatever condition is valid for the project and required for a story to be done is mentione in the DOD documengt.+

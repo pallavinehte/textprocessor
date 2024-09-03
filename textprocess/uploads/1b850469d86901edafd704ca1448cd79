@@ -1,0 +1,339 @@
+Certificate authority host: apus-blackduck-cfssl
+Certificate authority port: 8888
+Database client key and certificate are present and will be validated.
+Attempting to get root certificate.
+Attempting to verify certificates.
+verify: Not a directory: nosuchdir
+verify: Use -help for summary.
+Database client certificate is invalid and will be re-created.
+Attempting to get root certificate.
+Attempting to create client-based private key and certificate.
+Client-based private key: blackduck_user.key
+Client-based certificate: blackduck_user.crt
+Attempting to convert PEM key to PKCS#8 DER key.
+Database client key and certificate are present and will be validated.
+Attempting to get root certificate.
+Attempting to verify certificates.
+verify: Not a directory: nosuchdir
+verify: Use -help for summary.
+Database client certificate is invalid and will be re-created.
+Attempting to get root certificate.
+Attempting to create client-based private key and certificate.
+Client-based private key: blackduck.key
+Client-based certificate: blackduck.crt
+Attempting to convert PEM key to PKCS#8 DER key.
+Attempting to generate blackduck-matchengine self-signed server certificate and key.
+Server key and certificate are present and will be validated.
+Attempting to get root certificate.
+Attempting to verify certificates.
+verify: Not a directory: nosuchdir
+verify: Use -help for summary.
+Server certificate is invalid and will be re-created.
+Attempting to get root certificate.
+Attempting to create server-based private key and certificate.
+Server-based private key: blackduck-matchengine-server.key
+Server-based certificate: blackduck-matchengine-server.crt
+Attempting to generate blackduck_system client certificate and key.
+Attempting to create client-based private key and certificate.
+Client-based private key: blackduck_system.key
+Client-based certificate: blackduck_system.crt
+Attempting to generate blackduck_system store.
+Keystore has been created: blackduck_system.keystore
+Trusting root certificate within the blackduck_system store.
+Attempting to trust root.crt into store blackduck_system.keystore
+keytool error: java.lang.Exception: Alias <blackduck_root> does not exist
+Certificate was added to keystore
+Attempting to copy Java cacerts to create truststore.
+Store has been modified so no changes will be made.
+Attempting to trust root.crt into store blackduck-matchengine.truststore
+hub-root, Aug 26, 2024, trustedCertEntry, 
+Certificate fingerprint (SHA-256): 3E:8B:4E:00:55:2D:E8:C7:A2:3B:15:89:B6:C1:F7:05:1B:C7:64:F9:6E:2E:A4:6C:3C:15:AB:01:1A:D7:6C:E6
+Certificate was added to keystore
+Trusting Black Duck client certificate
+Attempting to trust blackduck_system.crt into store blackduck-matchengine.truststore
+blackduck_system, Aug 26, 2024, trustedCertEntry, 
+Certificate fingerprint (SHA-256): B6:30:CD:BF:8C:7E:CB:5A:4B:F3:66:70:AB:E9:1A:06:50:02:F5:4B:1A:79:78:B3:33:65:DE:C9:75:AC:D2:B0
+Certificate was added to keystore
+Creating Java Identity keystore
+Importing keystore /opt/blackduck/hub/blackduck-matchengine/security/blackduck_system.keycert.p12 to /opt/blackduck/hub/blackduck-matchengine/security/blackduck_system.jks...
+Attempting to create keystore.
+Keystore has been created: blackduck-matchengine.keystore
+Attempting to define MATCHENGINE service environment.
+No proxy host provided.
+Defined MATCHENGINE service environment.
+Attempting to start filebeat version 8.10.1 (amd64), libbeat 8.10.1 [ba6a0bcef9ec28790a10888070eab35b95277e38 built 2023-09-14 12:12:47 +0000 UTC]
+Attempting to start Black Duck MATCHENGINE service.
+Java started in the background with PID 343
+[0.001s][warning][gc] -Xloggc is deprecated. Will use -Xlog:gc:/opt/blackduck/hub/blackduck-matchengine/logs/gc-blackduck-matchengine.log instead.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.15)
+
+2024-08-26 08:26:27,198Z[GMT] [main] INFO  com.blackducksoftware.match.engine.MatchEngineStandaloneApplication [] []: Starting MatchEngineStandaloneApplication using Java 11.0.20.1 on apus-blackduck-matchengine-c998c7945-25ntz with PID 343 (/opt/blackduck/hub/blackduck-matchengine/lib/match.engine.jar started by root in /)
+2024-08-26 08:26:27,203Z[GMT] [main] INFO  com.blackducksoftware.match.engine.MatchEngineStandaloneApplication [] []: No active profile set, falling back to 1 default profile: "default"
+2024-08-26 08:26:30,592Z[GMT] [main] INFO  org.springframework.security.core.SpringSecurityCoreVersion [] []: You are running with Spring Security Core 5.8.5
+2024-08-26 08:26:30,595Z[GMT] [main] WARN  org.springframework.security.core.SpringSecurityCoreVersion [] []: **** You are advised to use Spring 5.3.29 or later with this version. You are running: 5.3.27
+2024-08-26 08:26:30,596Z[GMT] [main] INFO  org.springframework.security.config.SecurityNamespaceHandler [] []: Spring Security 'config' module version is 5.8.5
+2024-08-26 08:26:31,420Z[GMT] [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate [] []: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-26 08:26:31,518Z[GMT] [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate [] []: Finished Spring Data repository scanning in 32 ms. Found 0 JPA repository interfaces.
+2024-08-26 08:26:32,709Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'com.blackducksoftware.core.config.CoreMessagesConfig' of type [com.blackducksoftware.core.config.CoreMessagesConfig$$EnhancerBySpringCGLIB$$f48cbb9c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:32,727Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'messageSource' of type [com.blackducksoftware.core.message.spring.CoreResourceBundleMessageSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:32,813Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'messageInterpolator' of type [com.blackducksoftware.core.message.impl.SpringLocaleMessageInterpolator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:32,814Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'messageLookup' of type [com.blackducksoftware.core.message.impl.MessageLookup] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:32,818Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'com.blackducksoftware.core.config.CoreValidationConfig' of type [com.blackducksoftware.core.config.CoreValidationConfig$$EnhancerBySpringCGLIB$$8ebe3a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:32,822Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'validationExceptionHandler' of type [com.blackducksoftware.core.validation.impl.ValidationExceptionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:33,010Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'localValidatorFactoryBean' of type [org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:33,196Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$52f121f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:33,292Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'com.blackducksoftware.usermgmt.config.UserMgmtSecurityConfig' of type [com.blackducksoftware.usermgmt.config.UserMgmtSecurityConfig$$EnhancerBySpringCGLIB$$5cf7034a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:33,593Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'userMgmtAuthorizationProvider' of type [com.blackducksoftware.usermgmt.authorization.UserMgmtAuthorizationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:33,614Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'exceptionHandler' of type [com.blackducksoftware.core.exception.ExceptionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:33,621Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'com.blackducksoftware.core.config.CoreAuthConfig' of type [com.blackducksoftware.core.config.CoreAuthConfig$$EnhancerBySpringCGLIB$$8ece9e78] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:33,692Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'securityMetadataSource' of type [com.blackducksoftware.core.security.impl.SecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:33,695Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:34,316Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'com.blackducksoftware.core.config.CoreEventConfig' of type [com.blackducksoftware.core.config.CoreEventConfig$$EnhancerBySpringCGLIB$$4d2eeb3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:34,406Z[GMT] [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [] []: Bean 'eventEngine' of type [com.blackducksoftware.core.event.impl.EventEngine] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-26 08:26:36,509Z[GMT] [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer [] []: Tomcat initialized with port(s): 8443 (https)
+2024-08-26 08:26:36,519Z[GMT] [main] INFO  org.apache.coyote.http11.Http11NioProtocol [] []: Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2024-08-26 08:26:36,521Z[GMT] [main] INFO  org.apache.catalina.core.StandardService [] []: Starting service [Tomcat]
+2024-08-26 08:26:36,521Z[GMT] [main] INFO  org.apache.catalina.core.StandardEngine [] []: Starting Servlet engine: [Apache Tomcat/9.0.79]
+2024-08-26 08:26:36,700Z[GMT] [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [] []: Initializing Spring embedded WebApplicationContext
+2024-08-26 08:26:36,700Z[GMT] [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [] []: Root WebApplicationContext: initialization completed in 9384 ms
+2024-08-26 08:26:37,721Z[GMT] [main] INFO  com.blackducksoftware.core.db.impl.DatabaseBuilder [] []: DatabaseBuilder.build(hub.admin.db)...
+2024-08-26 08:26:37,813Z[GMT] [main] INFO  com.blackducksoftware.core.jpa.impl.JpaConfigUtil [] []: Attempting to create new data source [Data source key: DataSourceKey{Namespace=hub.admin.db, URL=jdbc:postgresql://nonprod3130-blackduck.postgres.database.azure.com:5432/bds_hub, Default schema=ST}].
+2024-08-26 08:26:37,818Z[GMT] [main] INFO  com.blackducksoftware.core.jpa.impl.JpaConfigUtil [] []: Password successfully retrieved from the file: /tmp/secrets/HUB_POSTGRES_ADMIN_PASSWORD_FILE
+2024-08-26 08:26:37,818Z[GMT] [main] INFO  com.blackducksoftware.core.jpa.impl.JpaConfigUtil [] []: SSL client certificates are disabled [Namespace: hub.admin.db].
+2024-08-26 08:26:37,887Z[GMT] [main] INFO  com.blackducksoftware.core.jpa.impl.JpaConfigUtil [] []: Successfully created new data source [Data source key: DataSourceKey{Namespace=hub.admin.db, URL=jdbc:postgresql://nonprod3130-blackduck.postgres.database.azure.com:5432/bds_hub, Default schema=ST} | Number of cached data sources: 1].
+2024-08-26 08:26:38,316Z[GMT] [main] INFO  com.blackducksoftware.core.db.impl.DatabaseBuilder [] []: DatabaseBuilder.build(hub.db)...
+2024-08-26 08:26:38,316Z[GMT] [main] INFO  com.blackducksoftware.core.jpa.impl.JpaConfigUtil [] []: Attempting to create new data source [Data source key: DataSourceKey{Namespace=hub.db, URL=jdbc:postgresql://nonprod3130-blackduck.postgres.database.azure.com:5432/bds_hub, Default schema=ST}].
+2024-08-26 08:26:38,317Z[GMT] [main] INFO  com.blackducksoftware.core.jpa.impl.JpaConfigUtil [] []: Password successfully retrieved from the file: /tmp/secrets/HUB_POSTGRES_USER_PASSWORD_FILE
+2024-08-26 08:26:38,317Z[GMT] [main] INFO  com.blackducksoftware.core.jpa.impl.JpaConfigUtil [] []: SSL client certificates are disabled [Namespace: hub.db].
+2024-08-26 08:26:38,318Z[GMT] [main] INFO  com.blackducksoftware.core.jpa.impl.JpaConfigUtil [] []: Successfully created new data source [Data source key: DataSourceKey{Namespace=hub.db, URL=jdbc:postgresql://nonprod3130-blackduck.postgres.database.azure.com:5432/bds_hub, Default schema=ST} | Number of cached data sources: 2].
+2024-08-26 08:26:39,287Z[GMT] [main] INFO  com.blackducksoftware.core.db.impl.HubDatabaseInitializer [] []: Attempting to get a connection to the database 1
+2024-08-26 08:26:39,920Z[GMT] [main] INFO  com.blackducksoftware.core.db.impl.HubDatabaseInitializer [] []: Successfully established connection [Attempt: 1 | Schema: public].
+2024-08-26 08:26:39,923Z[GMT] [main] INFO  com.blackducksoftware.core.db.impl.HubDatabaseInitializer [] []: Running migration scripts as user: blackduck
+2024-08-26 08:26:39,923Z[GMT] [main] INFO  com.blackducksoftware.core.db.impl.HubDatabaseInitializer [] []: Running migration in 1 project(s)
+2024-08-26 08:26:39,926Z[GMT] [main] INFO  com.blackducksoftware.core.db.impl.HubDatabaseInitializer [] []: Migraging database admin user: PropertyImpl{name=blackduck.hub.admin.db.user, value=blackduck}, db user: PropertyImpl{name=blackduck.hub.db.user, value=blackduck_user}, db reporting user: PropertyImpl{name=blackduck.hub.reporting.db.user, value=blackduck_reporter}, db schema: PropertyImpl{name=blackduck.hub.db.schema, value=st, defaultValue=st}, scheduler schema: PropertyImpl{name=blackduck.hub.scheduler.schema, value=sched_internal, defaultValue=sched_internal}
+2024-08-26 08:26:40,023Z[GMT] [main] INFO  com.blackducksoftware.core.db.impl.HubDatabaseInitializer [] []: Attempting to migrate database table: v_hub
+2024-08-26 08:26:40,303Z[GMT] [main] INFO  org.flywaydb.core.internal.database.base.BaseDatabaseType [] []: Database: jdbc:postgresql://nonprod3130-blackduck.postgres.database.azure.com:5432/bds_hub (PostgreSQL 15.7)
+2024-08-26 08:26:40,807Z[GMT] [main] INFO  org.flywaydb.core.internal.command.DbMigrate [] []: Current version of schema "public": << Empty Schema >>
+2024-08-26 08:26:41,187Z[GMT] [main] INFO  org.flywaydb.core.internal.command.DbMigrate [] []: Migrating schema "public" to version "4.8.0.000 - bootstrap"
+2024-08-26 08:26:41,195Z[GMT] [main] ERROR org.flywaydb.core.internal.command.DbMigrate [] []: Migration of schema "public" to version "4.8.0.000 - bootstrap" failed! Changes successfully rolled back.
+2024-08-26 08:26:41,201Z[GMT] [main] INFO  com.blackducksoftware.core.db.impl.HubDatabaseInitializer [] []: Database table migration process complete [Table: v_hub | Duration: 1.177 s].
+2024-08-26 08:26:41,205Z[GMT] [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [] []: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hubDbInitializer' defined in com.blackducksoftware.core.config.HubAdminDataSourceConfig: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration hub_V4_8_0_000__bootstrap.sql.vpp failed
+--------------------------------------------------
+SQL State  : 3F000
+Error Code : 0
+Message    : ERROR: schema "st" does not exist
+Location   : db/scripts/hub/hub_V4_8_0_000__bootstrap.sql.vpp (/file:/opt/blackduck/hub/blackduck-matchengine/lib/match.engine.jar!/BOOT-INF/lib/hubapp.db-2023.10.0.jar!/db/scripts/hub/hub_V4_8_0_000__bootstrap.sql.vpp)
+Line       : 2
+Statement  : grant all on schema st to "blackduck_user"
+
+2024-08-26 08:26:41,211Z[GMT] [main] INFO  org.apache.catalina.core.StandardService [] []: Stopping service [Tomcat]
+2024-08-26 08:26:41,226Z[GMT] [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [] []: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-08-26 08:26:41,311Z[GMT] [main] ERROR org.springframework.boot.SpringApplication [] []: Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hubDbInitializer' defined in com.blackducksoftware.core.config.HubAdminDataSourceConfig: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration hub_V4_8_0_000__bootstrap.sql.vpp failed
+--------------------------------------------------
+SQL State  : 3F000
+Error Code : 0
+Message    : ERROR: schema "st" does not exist
+Location   : db/scripts/hub/hub_V4_8_0_000__bootstrap.sql.vpp (/file:/opt/blackduck/hub/blackduck-matchengine/lib/match.engine.jar!/BOOT-INF/lib/hubapp.db-2023.10.0.jar!/db/scripts/hub/hub_V4_8_0_000__bootstrap.sql.vpp)
+Line       : 2
+Statement  : grant all on schema st to "blackduck_user"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156) ~[spring-context-5.3.27.jar!/:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:910) ~[spring-context-5.3.27.jar!/:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.27.jar!/:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.15.jar!/:2.7.15]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.15.jar!/:2.7.15]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.15.jar!/:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.15.jar!/:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.15.jar!/:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.15.jar!/:2.7.15]
+	at com.blackducksoftware.match.engine.MatchEngineStandaloneApplication.main(MatchEngineStandaloneApplication.java:54) [classes!/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) [match.engine.jar:?]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108) [match.engine.jar:?]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) [match.engine.jar:?]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) [match.engine.jar:?]
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration hub_V4_8_0_000__bootstrap.sql.vpp failed
+--------------------------------------------------
+SQL State  : 3F000
+Error Code : 0
+Message    : ERROR: schema "st" does not exist
+Location   : db/scripts/hub/hub_V4_8_0_000__bootstrap.sql.vpp (/file:/opt/blackduck/hub/blackduck-matchengine/lib/match.engine.jar!/BOOT-INF/lib/hubapp.db-2023.10.0.jar!/db/scripts/hub/hub_V4_8_0_000__bootstrap.sql.vpp)
+Line       : 2
+Statement  : grant all on schema st to "blackduck_user"
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:384) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:274) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:273) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:246) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:141) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:73) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:60) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:96) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:143) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:141) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:98) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:177) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129) ~[flyway-core-9.12.0.jar!/:?]
+	at com.blackducksoftware.core.db.impl.HubDatabaseInitializer.lambda$migrateDatabase$0(HubDatabaseInitializer.java:132) ~[core.db-2023.10.0.jar!/:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at com.blackducksoftware.core.db.impl.HubDatabaseInitializer.migrateDatabase(HubDatabaseInitializer.java:126) ~[core.db-2023.10.0.jar!/:?]
+	at com.blackducksoftware.core.db.impl.DatabaseInitializer.lambda$run$0(DatabaseInitializer.java:64) ~[core.db-2023.10.0.jar!/:?]
+	at io.prometheus.client.Gauge$Child.setToTime(Gauge.java:202) ~[simpleclient-0.16.0.jar!/:?]
+	at com.blackducksoftware.core.db.impl.DatabaseInitializer.run(DatabaseInitializer.java:64) ~[core.db-2023.10.0.jar!/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1930) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1872) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	... 26 more
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Migration hub_V4_8_0_000__bootstrap.sql.vpp failed
+--------------------------------------------------
+SQL State  : 3F000
+Error Code : 0
+Message    : ERROR: schema "st" does not exist
+Location   : db/scripts/hub/hub_V4_8_0_000__bootstrap.sql.vpp (/file:/opt/blackduck/hub/blackduck-matchengine/lib/match.engine.jar!/BOOT-INF/lib/hubapp.db-2023.10.0.jar!/db/scripts/hub/hub_V4_8_0_000__bootstrap.sql.vpp)
+Line       : 2
+Statement  : grant all on schema st to "blackduck_user"
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:275) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:222) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:68) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:57) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:56) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:376) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:274) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:273) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:246) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:141) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:73) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:60) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:96) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:143) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:141) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:98) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:177) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129) ~[flyway-core-9.12.0.jar!/:?]
+	at com.blackducksoftware.core.db.impl.HubDatabaseInitializer.lambda$migrateDatabase$0(HubDatabaseInitializer.java:132) ~[core.db-2023.10.0.jar!/:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at com.blackducksoftware.core.db.impl.HubDatabaseInitializer.migrateDatabase(HubDatabaseInitializer.java:126) ~[core.db-2023.10.0.jar!/:?]
+	at com.blackducksoftware.core.db.impl.DatabaseInitializer.lambda$run$0(DatabaseInitializer.java:64) ~[core.db-2023.10.0.jar!/:?]
+	at io.prometheus.client.Gauge$Child.setToTime(Gauge.java:202) ~[simpleclient-0.16.0.jar!/:?]
+	at com.blackducksoftware.core.db.impl.DatabaseInitializer.run(DatabaseInitializer.java:64) ~[core.db-2023.10.0.jar!/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1930) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1872) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	... 26 more
+Caused by: org.postgresql.util.PSQLException: ERROR: schema "st" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676) ~[postgresql-42.4.3.jar!/:42.4.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366) ~[postgresql-42.4.3.jar!/:42.4.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356) ~[postgresql-42.4.3.jar!/:42.4.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496) ~[postgresql-42.4.3.jar!/:42.4.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413) ~[postgresql-42.4.3.jar!/:42.4.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333) ~[postgresql-42.4.3.jar!/:42.4.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319) ~[postgresql-42.4.3.jar!/:42.4.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295) ~[postgresql-42.4.3.jar!/:42.4.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290) ~[postgresql-42.4.3.jar!/:42.4.3]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:118) ~[tomcat-jdbc-9.0.75.jar!/:?]
+	at com.sun.proxy.$Proxy116.execute(Unknown Source) ~[?:?]
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:201) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:95) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:210) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:68) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:57) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:56) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:376) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:274) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:273) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:246) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:141) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:73) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:60) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:96) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:143) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:141) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:98) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:177) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204) ~[flyway-core-9.12.0.jar!/:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129) ~[flyway-core-9.12.0.jar!/:?]
+	at com.blackducksoftware.core.db.impl.HubDatabaseInitializer.lambda$migrateDatabase$0(HubDatabaseInitializer.java:132) ~[core.db-2023.10.0.jar!/:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at com.blackducksoftware.core.db.impl.HubDatabaseInitializer.migrateDatabase(HubDatabaseInitializer.java:126) ~[core.db-2023.10.0.jar!/:?]
+	at com.blackducksoftware.core.db.impl.DatabaseInitializer.lambda$run$0(DatabaseInitializer.java:64) ~[core.db-2023.10.0.jar!/:?]
+	at io.prometheus.client.Gauge$Child.setToTime(Gauge.java:202) ~[simpleclient-0.16.0.jar!/:?]
+	at com.blackducksoftware.core.db.impl.DatabaseInitializer.run(DatabaseInitializer.java:64) ~[core.db-2023.10.0.jar!/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1930) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1872) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.27.jar!/:5.3.27]
+	... 26 more
+Java exited with error, code 1
+Waiting 30 seconds for file beats to send all logs to central logging
+Shutting down file beats gracefully
